@@ -56,17 +56,25 @@ public class AdapterRecView extends RecyclerView.Adapter<AdapterRecView.ViewHold
             if(dataItem.get(position).getNama().equals("Lumpia")){
                 Intent intent = new Intent(context, DescActivity.class);
                 intent.putExtra("Gambar_Default",R.drawable.lumpia);
-                intent.putExtra("Nama_Menu","Lumpia Semarang");
+                intent.putExtra("Nama_Default","Lumpia");
+                intent.putExtra("Harga_Default", "15000");
+                intent.putExtra("Deskripsi_Default","Lumpia Semarang");
                 context.startActivity(intent);
+
             }if(dataItem.get(position).getNama().equals("Pempek")){
                 Intent intent = new Intent(context, DescActivity.class);
                 intent.putExtra("Gambar_Default",R.drawable.pempek);
-                intent.putExtra("Nama_Menu","Pempek Palembang");
+                intent.putExtra("Nama_Default","Pempek");
+                intent.putExtra("Harga_Default","12500");
+                intent.putExtra("Deskripsi_Default","Pempek Palembang");
                 context.startActivity(intent);
+
             }if(dataItem.get(position).getNama().equals("Tahu Bakso")){
                 Intent intent = new Intent(context, DescActivity.class);
                 intent.putExtra("Gambar_Default",R.drawable.tahubakso);
-                intent.putExtra("Nama_Menu","Tahu Bakso Ungaran");
+                intent.putExtra("Nama_Default","Tahu Bakso");
+                intent.putExtra("Harga_Default","10000");
+                intent.putExtra("Deskripsi_Default","Tahu Bakso Ungaran");
                 context.startActivity(intent);
             }
         });

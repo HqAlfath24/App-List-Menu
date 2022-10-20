@@ -2,7 +2,7 @@ package com.example.applistmenu;
 
 public class ItemModel {
 
-    String nama, harga, daerah;
+    String nama, harga, deskripsi;
     int image;
 
     public ItemModel(String nama, String harga, int image) {
@@ -27,10 +27,10 @@ public class ItemModel {
         this.harga = harga;
     }
 
-    public String getDaerah() { return daerah; }
+    public String getDeskripsi() { return deskripsi; }
 
-    public void setDaerah(String daerah) {
-        this.nama = daerah;
+    public void setDeskripsi(String deskripsi) {
+        this.nama = deskripsi;
     }
 
     public int getImage() {
